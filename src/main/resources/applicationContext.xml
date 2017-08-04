@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop" 
+    xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:task="http://www.springframework.org/schema/task"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+                     http://www.springframework.org/schema/beans/spring-beans.xsd
+                     http://www.springframework.org/schema/context
+                     http://www.springframework.org/schema/context/spring-context.xsd
+                     http://www.springframework.org/schema/task
+                     http://www.springframework.org/schema/task/spring-task.xsd
+                     http://www.springframework.org/schema/aop
+                     http://www.springframework.org/schema/aop/spring-aop.xsd
+                     http://www.springframework.org/schema/mvc
+                     http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    
+	<!-- 隐式地向 Spring容器注册AutowiredAnnotationBeanPostProcessor、RequiredAnnotationBeanPostProcessor、
+	CommonAnnotationBeanPostProcessor以及PersistenceAnnotationBeanPostProcessor这4个BeanPostProcessor
+	配置了 context:component-scan　之后，该配置可以省略
+	参考：http://www.cnblogs.com/iuranus/archive/2012/07/19/2599084.html-->
+	<context:annotation-config/>
+   <!--注册DefaultAnnotationHandlerMapping与AnnotationMethodHandlerAdapter 两个bean,
+   		是spring MVC为@Controllers分发请求所必须的，即解决了@Controller注解使用的前提配置 
+   参考：http://blog.csdn.net/sjjsh2/article/details/53100728-->
+   <mvc:annotation-driven />
+   <context:component-scan base-package="com.helios.controller" />
+</beans>
