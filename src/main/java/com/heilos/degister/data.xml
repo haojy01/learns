@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<viewcache>  
+    <areas>  
+        <area idBak="1213123">  <!--addSetProperties 属性设置在这里的话需要通过 addSetProperties 来设置.-->
+            <id>1098</id>   <!-- addBeanPropertySetter 属性通过这种方式描述的话,可以用addBeanPropertySetter 这个方法,参数可以指定属性,属性可以与标签不一致. -->
+            <parentId>1001</parentId>  
+            <areaType>province</areaType>  
+            <name>北京</name>  
+            <ordering>1867</ordering>  
+        </area>  
+        <area>  
+            <id>1099</id>  
+            <parentId>1098</parentId>  
+            <areaType>capital</areaType>  
+            <name>北京</name>  
+            <ordering>1868</ordering>  
+            <phoneArea>010</phoneArea>  
+        </area>  
+        <area>  
+            <id>4476</id>  
+            <parentId>1099</parentId>  
+            <areaType>county</areaType>   
+            <name>北京市朝阳区</name>  
+            <ordering>1869</ordering>  
+            <phoneArea>010</phoneArea>  
+        </area>  
+        <area>  
+            <id>4477</id>  
+            <parentId>1099</parentId>  
+            <areaType>county</areaType>  
+            <name>北京市崇文区</name>  
+            <ordering>1870</ordering>  
+            <phoneArea>010</phoneArea>  
+        </area>  
+        <area>  
+            <id>4478</id>  
+            <parentId>1099</parentId>  
+            <areaType>county</areaType>  
+            <name>北京市大兴区</name>  
+            <ordering>1871</ordering>  
+            <phoneArea>010</phoneArea>  
+        </area>  
+    </areas>  
+</viewcache> 
