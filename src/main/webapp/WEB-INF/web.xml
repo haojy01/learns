@@ -19,6 +19,7 @@
             <param-name>contextConfigLocation</param-name>
             <param-value>classpath:spring_mvc.xml</param-value>
         </init-param>
+        <!-- 设置为负数或者不设置的时,会在serlet第一次用到时才被调用,如果设置为1则会在容器启动的时候调用 init方法 -->
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>

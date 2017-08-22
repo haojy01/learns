@@ -12,4 +12,9 @@ public class MainController {
 		ModelAndView modelAndView = new ModelAndView("index");
 		return modelAndView;
 	}
+	
+	public static void main(String[] args) {
+		String userDir = System.getProperty("user.dir");
+		System.out.println(userDir);
+	}
 }
